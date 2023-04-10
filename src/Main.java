@@ -97,9 +97,16 @@ public class Main {
         //ternary
         double mark = 6.5;
         boolean hasPassed = mark >= 5 ? true : false;
+
+        myMethod();
     }
 
 // METHODS
 
-    public static void
+    public static void myMethod(){
+        System.out.println("this ");
+        System.out.println("is ");
+        System.out.println("inside ");
+        System.out.println("myMethod");
+    }
 }
