@@ -99,6 +99,11 @@ public class Main {
         boolean hasPassed = mark >= 5 ? true : false;
 
         myMethod();
+
+        String info = getInfo(1);
+        System.out.println("info: " + info);
+
+        stringMethods();
     }
 
 // METHODS
@@ -108,5 +113,21 @@ public class Main {
         System.out.println("is ");
         System.out.println("inside ");
         System.out.println("myMethod");
+    }
+
+    public static String getInfo(int option){
+        if(option == 1) return "My name is Adrian";
+        else if(option == 2) return "This is an Ironhack Bootcamp";
+        else return "option " + option + "provides no info";
+    }
+
+    // STRING METHODS
+
+    public static void stringMethods(){
+        String address = "C/ Falsa Nº 123";
+
+        System.out.println("address length: " + address.length());
+        System.out.println(address.toUpperCase());
+        System.out.println(address.replace("a", "-"));
     }
 }
