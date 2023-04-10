@@ -36,18 +36,70 @@ public class Main {
 
         //OPERATORS
 
-        int number =10;
+        int number = 10;
         myDouble = 10;
 
         System.out.println(number + 5);
         System.out.println(number - 5);
         System.out.println(number * 5);
         System.out.println(number / 3);
+        System.out.println(number % 3);
         System.out.println(myDouble / 3);
         System.out.println(1.2 - 1.1);
         System.out.println(number); //10
         System.out.println(number++); //10 imprime primero el valor y luego ejecuta el ++
         System.out.println(number); //11 imprime el valor luego de ejecutar ++
         System.out.println(++number); //12 ejecuta primero e imprime despues el resultado
+
+        number *= 10;
+        System.out.println(number);
+
+        // CONDITIONALS
+
+        number = 1000;
+
+        //If... else
+        if (number >= 1000) {
+            System.out.println("number es mayor o igual que 1000");
+        } else if (number > 0 && number < 1000) {
+            System.out.println("number es mayor que 0 y menor que 1000");
+        } else {
+            System.out.println("number es menor que 1000");
+        }
+
+        //en una sola linea no hace falta "{}"
+        if (number % 2 == 0) System.out.println("number es par");
+        else System.out.println("number es impar");
+
+        // Switch
+        int day = 4;
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            default:
+                System.out.println("Weekend");
+                break;
+        }
+
+        //ternary
+        double mark = 6.5;
+        boolean hasPassed = mark >= 5 ? true : false;
     }
+
+// METHODS
+
+    public static void
 }
